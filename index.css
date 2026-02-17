@@ -1,1 +1,52 @@
+/*Current Page Styling, we can change it later to fit the theme. This is just a template*/
+body {
+  margin: 0;
+  background: #eef2f3;
+}
+
+/*Styling for the top header bar*/
+header {
+  background: #0a3d62;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/*Anything Research & Content related should have a div tag using this, it's just a simple content box*/
+.boxes {
+  background: white;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+container {
+  padding: 20px; /*This will provide spacing around our main content/research*/
+}
+
+/* Top Shelf Navigation Bar & Our current navigation bar styling for our website*/
+.navigationBar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navigationBar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navigationBar a:hover {
+  background-color: #89CFF0;
+  color: black;
+}
+
+.navigationBar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
 
