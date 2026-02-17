@@ -1,52 +1,110 @@
-/*Current Page Styling, we can change it later to fit the theme. This is just a template*/
+/* Bright background coloring so the website is more vibrant. */
 body {
   margin: 0;
-  background: #eef2f3;
+  background: linear-gradient(to bottom right, #b3d4ff, #ffffff);
+  font-family: Arial, sans-serif;
 }
 
-/*Styling for the top header bar*/
-header {
-  background: #0a3d62;
+/* Coloring for the navigation bar */
+.navigationBar {
+  background-color: #11152b;
+  padding: 0;
+}
+
+/* This prevents overlay on the nivagation bar, and it keeps them aligned. */
+.navigationBar nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for our navigation bar and maybe it might provide smooth transtions, I'm uncertain about the animation. */
+.navigationBar a {
+  color: #fefefe;
+  padding: 16px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.25s ease-in-out;
+}
+
+/* Navigation bar lights up once your hover over it*/
+.navigationBar a:hover {
+  background-color: #5ecbff;
+  color: #000;
+}
+
+/* Code for the drop down menu */
+
+/* Dropdown container that positions the submenu under the main tab. */
+.dropdown {
+  position: relative;
+}
+
+/* Styling for the dropdown menu so it matches the navigation bar. */
+.dropbtn {
+  background: none;
+  border: none;
+  color: #fefefe;
+  padding: 16px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+/* Dropdown menu will stay hidden unless you hover over it */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* This makes the sub sections appear underneath the main section */
+  left: 0;
+  background-color: #11152b;
+  min-width: 200px;
+  border: 3px solid #0a3d62;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  z-index: 999; /* This should prevent any overlay issues.*/
+}
+
+/* Styling for our submenu so it matches the navigation bar */
+.dropdown-content a {
+  color: #fefefe;
+  padding: 14px 18px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  transition: 0.25s ease-in-out;
+}
+
+/* Lights up submenu items with the blue from the navigation bar. */
+.dropdown-content a:hover {
+  background-color: #5ecbff;
+  color: #000;
+}
+
+/* This will cause the submenu to reveal itself when you hover over it */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Highlights the main dropdown tab when active or hovered. */
+.dropdown:hover .dropbtn {
+  background-color: #2ecc71;
   color: white;
-  padding: 20px;
-  text-align: center;
 }
 
-/*Anything Research & Content related should have a div tag using this, it's just a simple content box*/
+/* Styling for our boxes that should go around or text, and also our images once I add them.*/
 .boxes {
   background: white;
   padding: 20px;
   margin: 15px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  border-radius: 8px;
+  border-radius: 12px;
+  border: 3px solid #0a3d62;
+  box-shadow: 0 6px 18px rgba(0, 60, 120, 0.3);
 }
 
-container {
-  padding: 20px; /*This will provide spacing around our main content/research*/
+/* This just adds more spacing to the overall website */
+.container {
+  padding: 25px;
 }
 
-/* Top Shelf Navigation Bar & Our current navigation bar styling for our website*/
-.navigationBar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.navigationBar a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navigationBar a:hover {
-  background-color: #89CFF0;
-  color: black;
-}
-
-.navigationBar a.active {
-  background-color: #04AA6D;
-  color: white;
-}
 
