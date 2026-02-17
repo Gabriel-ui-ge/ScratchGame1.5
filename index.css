@@ -107,4 +107,20 @@ body {
   padding: 25px;
 }
 
+/*This should enable us to be able to link separate webpages together.*/
+.card-link {
+text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link .card {
+  cursor: pointer;
+transition: transform 0.2s ease;
+}
+
+.card-link .card:hover {
+transform: scale(1.03);
+}
+
 
