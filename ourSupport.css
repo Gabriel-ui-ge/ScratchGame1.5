@@ -1,1 +1,81 @@
+/* Backgroudn styling so this webpage matches our theme */
+body {
+  margin: 0;
+  background: linear-gradient(to bottom right, #b3d4ff, #ffffff);
+  font-family: Arial, sans-serif;
+}
+
+/* Main container */
+.support-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  border: 3px solid #0a3d62;
+  box-shadow: 0 6px 18px rgba(0, 60, 120, 0.3);
+}
+
+/* Title */
+.support-container h1 {
+  text-align: center;
+  color: #0a3d62;
+  margin-bottom: 10px;
+}
+
+/* Intro paragraph */
+.intro {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* This is the section for our scheduler */
+.scheduler-box {
+  background: #f0f8ff;
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid #0a3d62;
+}
+
+/* Form labels */
+.scheduler-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #0a3d62;
+}
+
+/* Input */
+.scheduler-form input,
+.scheduler-form select,
+.scheduler-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 2px solid #0a3d62;
+  font-size: 16px;
+  background: #ffffff;
+}
+
+/* This is the css for our sumbit button */
+.submit-btn {
+  margin-top: 25px;
+  padding: 12px 20px;
+  background-color: #0a3d62;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.25s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #5ecbff;
+  color: #000;
+}
 
